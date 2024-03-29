@@ -10,8 +10,8 @@ defined( 'ABSPATH' ) || exit;
  *
  * @return  string
  */
-function bpd_features_get_slug(): string {
-	return 'bpd-features';
+function wpcomsp_features_get_slug(): string {
+	return 'wpcomsp-project-scaffold-features';
 }
 
 /**
@@ -27,8 +27,8 @@ function bpd_features_get_slug(): string {
  *
  * @return  array|null
  */
-function bpd_features_get_asset_meta( string $asset_path, ?array $extra_dependencies = null ): ?array {
-	if ( ! file_exists( $asset_path ) || ! str_starts_with( $asset_path, BPD_FEATURES_DIR ) ) {
+function wpcomsp_features_get_asset_meta( string $asset_path, ?array $extra_dependencies = null ): ?array {
+	if ( ! file_exists( $asset_path ) || ! str_starts_with( $asset_path, WPCOMSP_FEATURES_DIR ) ) {
 		return null;
 	}
 
@@ -42,7 +42,7 @@ function bpd_features_get_asset_meta( string $asset_path, ?array $extra_dependen
 			'version'      => filemtime( $asset_path ),
 		);
 		if ( false === $asset_meta['version'] ) { // Safeguard against filemtime() returning false.
-			$asset_meta['version'] = BPD_FEATURES_METADATA['Version'];
+			$asset_meta['version'] = WPCOMSP_FEATURES_METADATA['Version'];
 		}
 	}
 

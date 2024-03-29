@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Build Processes Demo Extra Functionality 0.1.0\n"
+"Project-Id-Version: WPCOMSP Project Scaffold Features 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -12,12 +12,7 @@ msgstr ""
 "Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 3.2.2\n"
-"X-Domain: build-processes-demo-features\n"
-
-#. Author URI of the plugin
-#: build-processes-demo-features.php
-msgid "https://wpspecialprojects.wordpress.com/"
-msgstr ""
+"X-Domain: wpcomsp-project-scaffold-features\n"
 
 #: includes/custom-post-types.php:16
 msgctxt "Post Type General Name"
@@ -77,17 +72,22 @@ msgstr "Livros"
 msgid "Books catalogue"
 msgstr "Catálogo de livros"
 
-#. Plugin Name of the plugin
-#: build-processes-demo-features.php
-msgid "Build Processes Demo Features"
-msgstr ""
-
 #. Description of the plugin
-#: build-processes-demo-features.php
+#: wpcomsp-project-scaffold-features.php
 msgid "A features plugin for a custom theme. Could include post types, metaboxes etc. Do not use for blocks!"
 msgstr "Um plugin com funcionalidades extras para um tema customizado. Pode incluir post types, metaboxes etc. Não usar para blocos!"
 
 #. Author of the plugin
-#: build-processes-demo-features.php
+#: wpcomsp-project-scaffold-features.php
 msgid "WordPress.com Special Projects"
+msgstr ""
+
+#. Plugin Name of the plugin
+#: wpcomsp-project-scaffold-features.php
+msgid "WPCOMSP Project Scaffold Features"
+msgstr ""
+
+#. Author URI of the plugin
+#: wpcomsp-project-scaffold-features.php
+msgid "https://wpspecialprojects.com"
 msgstr ""

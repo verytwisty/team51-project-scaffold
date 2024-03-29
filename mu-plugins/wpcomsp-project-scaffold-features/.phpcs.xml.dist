@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="build-processes-demo-features" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../vendor/squizlabs/php_codesniffer/phpcs.xsd">
-	<description>Custom ruleset for the Build Processes Demo site features.</description>
+<ruleset name="wpcomsp-project-scaffold-features" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../vendor/squizlabs/php_codesniffer/phpcs.xsd">
+	<description>Custom ruleset for the WPCOMSP Project Scaffold site features.</description>
 
 	<!-- Extend the A8CTeam51 ruleset. -->
 	<rule ref="../../vendor/a8cteam51/team51-configs/quality-tools/phpcs.xml.dist"/>
@@ -9,7 +9,7 @@
 	<rule ref="WordPress.WP.I18n">
 		<properties>
 			<property name="text_domain" type="array">
-				<element value="build-processes-demo-features"/> <!-- Change this value to your plugin slug. -->
+				<element value="wpcomsp-project-scaffold-features"/> <!-- Change this value to your plugin slug. -->
 			</property>
 		</properties>
 	</rule>
@@ -18,8 +18,8 @@
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
 			<property name="prefixes" type="array">
-				<element value="build_processes_demo_features"/> <!-- Change this value to your plugin prefix. -->
-				<element value="bpd_features"/> <!-- Change this value to your plugin prefix. -->
+				<element value="wpcomsp_project_scaffold_features"/> <!-- Change this value to your plugin prefix. -->
+				<element value="wpcomsp_features"/> <!-- Change this value to your plugin prefix. -->
 			</property>
 		</properties>
 	</rule>
