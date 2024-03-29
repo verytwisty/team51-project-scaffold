@@ -1,19 +1,19 @@
 {
-  "name": "build-processes-demo",
+  "name": "project-scaffold",
   "version": "1.0.0",
-  "description": "A demo project for showcasing standardized build processes for various asset types.",
+  "description": "The scaffold for new projects used by the WordPress.com Special Projects team.",
   "author": {
     "name": "WordPress.com Special Projects Team",
-    "url": "https://wpspecialprojects.wordpress.com/"
+    "url": "https://wpspecialprojects.com"
   },
   "license": "GPL-2.0-or-later",
   "keywords": [
     "wordpress",
-    "demo"
+    "scaffold"
   ],
-  "homepage": "https://build-processes-demo-production.mystagingwebsite.com",
-  "repository": "https://github.com/a8cteam51/build-processes-demo",
-  "bugs": "https://github.com/a8cteam51/build-processes-demo/issues",
+  "homepage": "https://wpcomsp-project-scaffold-production.mystagingwebsite.com",
+  "repository": "https://github.com/a8cteam51/team51-project-scaffold",
+  "bugs": "https://github.com/a8cteam51/team51-project-scaffold/issues",
   "private": true,
   "engines": {
     "node": ">=20.0",
