@@ -26,8 +26,8 @@ upgrade/*
 uploads/*
 languages/*
 
-# Created by https://www.toptal.com/developers/gitignore/api/macos,linux,windows,node,yarn,composer,phpstorm+all,visualstudiocode,sublimetext
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,windows,node,yarn,composer,phpstorm+all,visualstudiocode,sublimetext
+# Created by https://www.toptal.com/developers/gitignore/api/node,yarn,linux,macos,windows,composer,sublimetext,phpstorm+all,visualstudiocode,phpcodesniffer
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,yarn,linux,macos,windows,composer,sublimetext,phpstorm+all,visualstudiocode,phpcodesniffer
 
 ### Composer ###
 composer.phar
@@ -225,6 +225,13 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+### PHPCodeSniffer ###
+# CodeSniffer
+phpcs.xml
+
+/vendor/*
+/wpcs/*
+
 ### PhpStorm+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
@@ -408,4 +415,4 @@ $RECYCLE.BIN/
 # and uncomment the following lines
 # .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,linux,windows,node,yarn,composer,phpstorm+all,visualstudiocode,sublimetext
+# End of https://www.toptal.com/developers/gitignore/api/node,yarn,linux,macos,windows,composer,sublimetext,phpstorm+all,visualstudiocode,phpcodesniffer

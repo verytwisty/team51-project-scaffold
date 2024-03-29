@@ -50,18 +50,18 @@
       "@format:php:blocks",
       "@format:php:features"
     ],
-    "format:php:theme": "phpcbf --standard=./themes/build-processes-demo/.phpcs.xml --basepath=. ./themes/build-processes-demo -v",
-    "format:php:blocks": "phpcbf --standard=./mu-plugins/build-processes-demo-blocks/.phpcs.xml --basepath=. ./mu-plugins/build-processes-demo-blocks -v",
-    "format:php:features": "phpcbf --standard=./mu-plugins/build-processes-demo-features/.phpcs.xml --basepath=. ./mu-plugins/build-processes-demo-features -v",
+    "format:php:theme": "phpcbf --standard=./themes/build-processes-demo/.phpcs.xml.dist --basepath=. ./themes/build-processes-demo -v",
+    "format:php:blocks": "phpcbf --standard=./mu-plugins/build-processes-demo-blocks/.phpcs.xml.dist --basepath=. ./mu-plugins/build-processes-demo-blocks -v",
+    "format:php:features": "phpcbf --standard=./mu-plugins/build-processes-demo-features/.phpcs.xml.dist --basepath=. ./mu-plugins/build-processes-demo-features -v",
 
     "lint:php": [
       "@lint:php:theme",
       "@lint:php:blocks",
       "@lint:php:features"
     ],
-    "lint:php:theme": "phpcs --standard=./themes/build-processes-demo/.phpcs.xml --basepath=. ./themes/build-processes-demo -v",
-    "lint:php:blocks": "phpcs --standard=./mu-plugins/build-processes-demo-blocks/.phpcs.xml --basepath=. ./mu-plugins/build-processes-demo-blocks -v",
-    "lint:php:features": "phpcs --standard=./mu-plugins/build-processes-demo-features/.phpcs.xml --basepath=. ./mu-plugins/build-processes-demo-features -v",
+    "lint:php:theme": "phpcs --standard=./themes/build-processes-demo/.phpcs.xml.dist --basepath=. ./themes/build-processes-demo -v",
+    "lint:php:blocks": "phpcs --standard=./mu-plugins/build-processes-demo-blocks/.phpcs.xml.dist --basepath=. ./mu-plugins/build-processes-demo-blocks -v",
+    "lint:php:features": "phpcs --standard=./mu-plugins/build-processes-demo-features/.phpcs.xml.dist --basepath=. ./mu-plugins/build-processes-demo-features -v",
 
     "internationalize": [
       "@makepot:theme",
