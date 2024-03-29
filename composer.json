@@ -48,14 +48,14 @@
       "@format:php:theme",
       "@format:php:features"
     ],
-    "format:php:theme": "phpcbf --standard=./themes/build-processes-demo/.phpcs.xml.dist --basepath=. ./themes/build-processes-demo -v",
+    "format:php:theme": "phpcbf --standard=./themes/wpcomsp-project-scaffold/.phpcs.xml.dist --basepath=. ./themes/wpcomsp-project-scaffold -v",
     "format:php:features": "phpcbf --standard=./mu-plugins/wpcomsp-project-scaffold-features/.phpcs.xml.dist --basepath=. ./mu-plugins/wpcomsp-project-scaffold-features -v",
 
     "lint:php": [
       "@lint:php:theme",
       "@lint:php:features"
     ],
-    "lint:php:theme": "phpcs --standard=./themes/build-processes-demo/.phpcs.xml.dist --basepath=. ./themes/build-processes-demo -v",
+    "lint:php:theme": "phpcs --standard=./themes/wpcomsp-project-scaffold/.phpcs.xml.dist --basepath=. ./themes/wpcomsp-project-scaffold -v",
     "lint:php:features": "phpcs --standard=./mu-plugins/wpcomsp-project-scaffold-features/.phpcs.xml.dist --basepath=. ./mu-plugins/wpcomsp-project-scaffold-features -v",
 
     "internationalize": [
@@ -66,9 +66,9 @@
       "@updatepo:features"
     ],
 
-    "makepot:theme": "wp i18n make-pot themes/build-processes-demo",
-    "updatepo:theme": "wp i18n update-po themes/build-processes-demo/languages/build-processes-demo.pot",
-    "makemo:theme": "wp i18n make-mo themes/build-processes-demo/languages",
+    "makepot:theme": "wp i18n make-pot themes/wpcomsp-project-scaffold",
+    "updatepo:theme": "wp i18n update-po themes/wpcomsp-project-scaffold/languages/wpcomsp-project-scaffold.pot",
+    "makemo:theme": "wp i18n make-mo themes/wpcomsp-project-scaffold/languages",
 
     "makepot:features": "wp i18n make-pot mu-plugins/wpcomsp-project-scaffold-features",
     "updatepo:features": "wp i18n update-po mu-plugins/wpcomsp-project-scaffold-features/languages/wpcomsp-project-scaffold-features.pot",

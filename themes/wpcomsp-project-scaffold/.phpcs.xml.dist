@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<ruleset name="wpcomsp-project-scaffold" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../vendor/squizlabs/php_codesniffer/phpcs.xsd">
+	<description>Custom ruleset for the WPCOMSP Project Scaffold site child theme.</description>
+
+	<!-- Extend the WPCOMSP ruleset. -->
+	<rule ref="../../vendor/a8cteam51/team51-configs/quality-tools/phpcs.xml.dist"/>
+
+	<!-- Check that the proper text domain(s) is used everywhere. -->
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="wpcomsp-project-scaffold"/> <!-- Change this value to your theme slug. -->
+			</property>
+		</properties>
+	</rule>
+
+	<!-- Check that the proper prefix is used everywhere. -->
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="wpcomsp_project_scaffold"/> <!-- Change this value to your theme prefix. -->
+				<element value="wpcomsp"/> <!-- Change this value to your theme prefix. -->
+			</property>
+		</properties>
+	</rule>
+
+	<!-- Add any other custom rules here. -->
+</ruleset>

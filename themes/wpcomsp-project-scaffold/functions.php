@@ -1,10 +1,10 @@
 <?php
 /**
- * Build processes demo theme functions and definitions.
+ * WPCOMSP Project Scaffold theme functions and definitions.
  *
  * @link    https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package BuildProcessesDemo_Theme
+ * @package WPCOMSPProjectScaffold_Theme
  * @since   1.0.0
  * @version 1.0.0
  */
@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
  *
  * @return  string
  */
-function bpd_get_theme_slug(): string {
+function wpcomsp_get_theme_slug(): string {
 	return sanitize_key( wp_get_theme()->get( 'Name' ) );
 }
 
@@ -36,7 +36,7 @@ function bpd_get_theme_slug(): string {
  *
  * @return  array|null
  */
-function bpd_get_theme_asset_meta( string $asset_path, ?array $extra_dependencies = null ): ?array {
+function wpcomsp_get_theme_asset_meta( string $asset_path, ?array $extra_dependencies = null ): ?array {
 	if ( ! file_exists( $asset_path ) || ! str_starts_with( $asset_path, get_stylesheet_directory() ) ) {
 		return null;
 	}
@@ -51,7 +51,7 @@ function bpd_get_theme_asset_meta( string $asset_path, ?array $extra_dependencie
 			'version'      => filemtime( $asset_path ),
 		);
 		if ( 'css' === $asset_path_info['extension'] && get_theme_file_path( 'style.css' ) !== $asset_path ) {
-			$asset_meta['dependencies'][] = bpd_get_theme_slug() . '-style';
+			$asset_meta['dependencies'][] = wpcomsp_get_theme_slug() . '-style';
 		}
 		if ( false === $asset_meta['version'] ) { // Safeguard against filemtime() returning false.
 			$asset_meta['version'] = wp_get_theme()->get( 'Version' );
@@ -67,10 +67,10 @@ function bpd_get_theme_asset_meta( string $asset_path, ?array $extra_dependencie
 }
 
 // Include the rest of the theme's files.
-foreach ( glob( __DIR__ . '/includes/*.php' ) as $bpd_filename ) {
-	if ( preg_match( '#/includes/_#i', $bpd_filename ) ) {
+foreach ( glob( __DIR__ . '/includes/*.php' ) as $wpcomsp_filename ) {
+	if ( preg_match( '#/includes/_#i', $wpcomsp_filename ) ) {
 		continue; // Ignore files prefixed with an underscore.
 	}
 
-	include $bpd_filename;
+	include $wpcomsp_filename;
 }

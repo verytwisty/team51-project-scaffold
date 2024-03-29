@@ -1,8 +1,8 @@
 /*
-Theme Name:         Build Processes Demo Theme
-Theme URI:          https://github.com/a8cteam51/build-processes-demo
+Theme Name:         WPCOMSP Project Scaffold Theme
+Theme URI:          https://github.com/a8cteam51/team51-project-scaffold
 Author:             WordPress Special Projects
-Author URI:         https://wpspecialprojects.wordpress.com
+Author URI:         https://wpspecialprojects.com
 Description:        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et tincidunt metus, eu rutrum sapien.
 Version:            1.0.0
 Update URI:			false
@@ -10,9 +10,9 @@ Requires at least:  6.1
 Requires PHP:       8.1
 License:            GNU General Public License v3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
-Text Domain:        build-processes-demo
+Text Domain:        wpcomsp-project-scaffold
 Domain Path:        /languages
-Tags:               demo, build process
+Tags:               scaffold
 */
 body {
   line-height: 20px;

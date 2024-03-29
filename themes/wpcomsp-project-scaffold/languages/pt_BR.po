@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Build Processes Demo Theme 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/build-processes-demo\n"
+"Project-Id-Version: WPCOMSP Project Scaffold Theme 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -12,17 +12,7 @@ msgstr ""
 "Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 3.2.2\n"
-"X-Domain: build-processes-demo\n"
-
-#. Theme Name of the theme
-#: style.css
-msgid "Build Processes Demo Theme"
-msgstr "Tema demonstração de processos de build"
-
-#. Theme URI of the theme
-#: style.css
-msgid "https://github.com/a8cteam51/build-processes-demo"
-msgstr ""
+"X-Domain: wpcomsp-project-scaffold\n"
 
 #. Description of the theme
 #: style.css
@@ -32,11 +22,6 @@ msgstr "Essa string pode ser traduzida mas não literalmente."
 #. Author of the theme
 #: style.css
 msgid "WordPress Special Projects"
-msgstr ""
-
-#. Author URI of the theme
-#: style.css
-msgid "https://wpspecialprojects.wordpress.com"
 msgstr ""
 
 #: includes/theme-shortcodes.php:11
@@ -130,4 +115,19 @@ msgstr ""
 #: theme.json
 msgctxt "Template part name"
 msgid "Footer"
+msgstr ""
+
+#. Theme Name of the theme
+#: style.css
+msgid "WPCOMSP Project Scaffold Theme"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://github.com/a8cteam51/team51-project-scaffold"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://wpspecialprojects.com"
 msgstr ""
