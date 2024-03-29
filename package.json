@@ -16,14 +16,14 @@
   "bugs": "https://github.com/a8cteam51/build-processes-demo/issues",
   "private": true,
   "engines": {
-    "node": ">=18.0",
-    "npm": ">=9.0"
+    "node": ">=20.0",
+    "npm": ">=10.0"
   },
   "devDependencies": {
     "@csstools/postcss-sass": "^5.0.1",
-    "@wordpress/browserslist-config": "^5.20.0",
-    "@wordpress/postcss-plugins-preset": "^4.21.0",
-    "@wordpress/scripts": "^26.8.0",
+    "@wordpress/browserslist-config": "^5.37.0",
+    "@wordpress/postcss-plugins-preset": "^4.38.0",
+    "@wordpress/scripts": "^27.5.0",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^10.1.0",
     "rtlcss": "^4.0.0"
