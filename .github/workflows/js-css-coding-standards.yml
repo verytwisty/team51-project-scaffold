@@ -7,7 +7,7 @@ on:
     branches: [ trunk, develop ]
 
 jobs:
-  lint:
+  lint-js_css-files:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,7 +17,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version-file: 'package.json'
-          cache: 'npm'
 
       - name: Install dependencies
         run: npm ci

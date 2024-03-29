@@ -7,7 +7,7 @@ on:
     branches: [ trunk, develop ]
 
 jobs:
-  build:
+  lint-php-files:
     strategy:
       matrix:
         php: [ 8.2, 8.3 ] # Include all PHP versions between the site's current version and the latest release version.
