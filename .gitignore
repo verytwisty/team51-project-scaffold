@@ -25,6 +25,7 @@ themes/*
 upgrade/*
 uploads/*
 languages/*
+debug.log
 
 # Created by https://www.toptal.com/developers/gitignore/api/node,yarn,linux,macos,windows,composer,sublimetext,phpstorm+all,visualstudiocode,phpcodesniffer
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,yarn,linux,macos,windows,composer,sublimetext,phpstorm+all,visualstudiocode,phpcodesniffer
