@@ -15,6 +15,7 @@ msgstr ""
 "X-Domain: build-processes-demo-features\n"
 
 #. Author URI of the plugin
+#: build-processes-demo-features.php
 msgid "https://wpspecialprojects.wordpress.com/"
 msgstr ""
 
@@ -77,13 +78,16 @@ msgid "Books catalogue"
 msgstr "Catálogo de livros"
 
 #. Plugin Name of the plugin
+#: build-processes-demo-features.php
 msgid "Build Processes Demo Features"
 msgstr ""
 
 #. Description of the plugin
+#: build-processes-demo-features.php
 msgid "A features plugin for a custom theme. Could include post types, metaboxes etc. Do not use for blocks!"
 msgstr "Um plugin com funcionalidades extras para um tema customizado. Pode incluir post types, metaboxes etc. Não usar para blocos!"
 
 #. Author of the plugin
+#: build-processes-demo-features.php
 msgid "WordPress.com Special Projects"
 msgstr ""

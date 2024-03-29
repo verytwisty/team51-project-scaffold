@@ -1,6 +1,6 @@
 {
     "translation-revision-date": "2022-12-15 22:53-0300",
-    "generator": "WP-CLI\/2.7.1",
+    "generator": "WP-CLI\/2.10.0",
     "source": "build\/spamham\/index.js",
     "domain": "messages",
     "locale_data": {

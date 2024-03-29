@@ -15,14 +15,17 @@ msgstr ""
 "X-Domain: build-processes-demo-blocks\n"
 
 #. Plugin Name of the plugin
+#: build-processes-demo-blocks.php
 msgid "Build Processes Demo Blocks"
 msgstr "Blocos de demonstração de processos de build"
 
 #. Description of the plugin
+#: build-processes-demo-blocks.php
 msgid "Example block scaffolded with Create Block tool."
 msgstr "Bloco de exemplo criado com o Create Block."
 
 #. Author URI of the plugin
+#: build-processes-demo-blocks.php
 msgid "https://wpspecialprojects.wordpress.com/"
 msgstr ""
 
@@ -64,5 +67,6 @@ msgid "SpamHam Block"
 msgstr "Bloco SpamHam"
 
 #. Author of the plugin
+#: build-processes-demo-blocks.php
 msgid "WordPress.com Special Projects"
 msgstr ""
