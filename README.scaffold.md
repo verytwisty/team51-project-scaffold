@@ -18,6 +18,6 @@ NOTE: While PRs are not required to be manually reviewed, we are happy to review
 
 ## Deployment
 
-- Prior to launch, during development, pushing to the `trunk` branch will automatically deploy to the in-progress site at https://EXAMPLE_REPO_PROD_URL
+- Prior to launch, during development, pushing to the `trunk` branch will automatically deploy to the in-progress site at EXAMPLE_REPO_PROD_URL
 - Once this project is launched, pushing to the `trunk` branch will be reviewed and deployed to the production site by a member of the Special Projects Team (see GitHub workflow above)
 - A new dev/staging site will then be created and pushing to the `develop` branch will then automatically deploy that dev/staging site

@@ -49,7 +49,7 @@ const buildTemplate = async ( filePath ) => {
 		replacements = {
 			'Build Processes Demo': repository.custom_properties['human-title'] ?? repository.name,
 			'A demo project for showcasing standardized build processes for various asset types.': repository.description ?? '',
-			'build-processes-demo-production.mystagingwebsite.com': repository.homepage ?? 'https://wpspecialprojects.com',
+			'https://build-processes-demo-production.mystagingwebsite.com': repository.homepage ?? 'https://wpspecialprojects.com',
 			'build-processes-demo': repository.name,
 			'build_processes_demo': repository.custom_properties['php-globals-long-prefix'],
 			'bpd': repository.custom_properties['php-globals-short-prefix'],
