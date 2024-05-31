@@ -39,6 +39,11 @@ jobs:
       - name: Perform string replacements within the files.
         run: node ./.github/workflows/fill-in-scaffold.mjs '${{ toJSON( github.event.repository ) }}'
 
+      - name: Delete and regenerate package-lock.json.
+        run: |
+          rm -f package-lock.json
+          npm install
+
       - name: Commit the changed files.
         run: git commit -am "chore -- fill in scaffolding placeholders"
 
