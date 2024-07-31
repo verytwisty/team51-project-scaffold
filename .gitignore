@@ -15,7 +15,6 @@ mu-plugins/*
 !mu-plugins/mu-loader.php
 !mu-plugins/colophon
 !mu-plugins/team51-tracking
-!mu-plugins/build-processes-demo-blocks
 !mu-plugins/build-processes-demo-features
 
 themes/*

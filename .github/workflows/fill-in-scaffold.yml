@@ -30,7 +30,6 @@ jobs:
           git submodule update
           git mv --force README.scaffold.md README.md
           git mv themes/build-processes-demo themes/${{ github.event.repository.name }}
-          git mv mu-plugins/build-processes-demo-blocks mu-plugins/${{ github.event.repository.name }}-blocks
           git mv mu-plugins/build-processes-demo-features mu-plugins/${{ github.event.repository.name }}-features
 
       - name: Commit the changed files.
