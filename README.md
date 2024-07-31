@@ -80,11 +80,7 @@ FSE template parts are included in this to show desired folder structure only. Y
 
 ### Gutenberg blocks
 
-All custom-built blocks must be placed in a mu-plugin. The demo project contains a mu-plugin called `build-processes-demo-blocks` which exemplifies building two blocks called `build-processes-demo/foobar` and `build-processes-demo/spamham`, respectively.
-
-By separating the blocks from the theme into a mu-plugin, we can ensure that the blocks are always available on the site, even if the theme is changed (e.g., because of a future redesign or as part of the debugging process). Moreover, it forces us, as developers, to think about the blocks as a separate entity from the theme and to design the code as such thus making it easier to reuse them in other projects.
-
-The mu-plugin must contain enough CSS for the block to be functional and not appear broken. All other styling can be held in the mu-plugin or the theme. [Seedlet is an example](https://github.com/Automattic/themes/tree/trunk/seedlet/assets/sass/blocks) of a theme providing its own styling for the blocks.
+Custom blocks should now use the [WPCom Special Projects Blocks Monorepo](https://github.com/a8cteam51/special-projects-blocks-monorepo). You'll find full written documentation for how to use this system [in the Wiki of the repo](https://github.com/a8cteam51/special-projects-blocks-monorepo/wiki).
 
 ### Features plugin
 
