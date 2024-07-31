@@ -16,9 +16,7 @@ As a rule of thumb, if there is another source of updates for a piece of code, i
 
 ### Theme Structure
 
-This demo project contains a theme called `build-processes-demo` which is a child theme of the [Blockbase](https://wordpress.org/themes/blockbase/) theme. Using Blockbase is **not** a requirement, but it is a good example of a FSE theme.
-
-The usage of a child theme is strongly encouraged even if the project is built upon a Twenty\* theme. Rather than modifying the theme directly and disabling updates by renaming it, it is better to create a child theme and use the Twenty\* theme as a parent theme. That way, we can still benefit from fixes in the template theme **and** it makes it much easier to figure out what the customizations were when the inevitable redesign rolls around in 3-5 years.
+This demo project contains a Block Theme called `build-processes-demo` which is setup to work with all build processes set out in `composer.json` and `package.json`. This theme is a recommendation of structure only. You can modify or replace this as needed if needed. [Block Canvas](https://github.com/Automattic/themes/tree/trunk/block-canvas) is also an excellent starter theme you can consider.
 
 In general, any active theme on the site should contain the following folder structure:
 
