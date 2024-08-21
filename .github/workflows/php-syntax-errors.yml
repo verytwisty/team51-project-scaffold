@@ -13,6 +13,7 @@ jobs:
         php: [ 8.2, 8.3 ] # Include all PHP versions between the site's current version and the latest release version.
 
     runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     steps:
       - uses: actions/checkout@v4

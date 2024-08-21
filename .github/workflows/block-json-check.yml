@@ -1,12 +1,13 @@
 name: Test for block.json files.
 
-on: 
+on:
   pull_request:
     branches: [ trunk, develop ]
 
 jobs:
   block-file-check:
     runs-on: ubuntu-latest
+    timeout-minutes: 3
 
     steps:
     - uses: actions/checkout@v4
