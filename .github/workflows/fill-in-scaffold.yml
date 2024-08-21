@@ -30,6 +30,7 @@ jobs:
           git submodule update
           git mv --force README.scaffold.md README.md
           git mv themes/a8csp-project-scaffold themes/${{ github.event.repository.name }}
+          git mv mu-plugins/a8csp-project-scaffold-features/a8csp-project-scaffold-features.php mu-plugins/a8csp-project-scaffold-features/${{ github.event.repository.name }}-features.php
           git mv mu-plugins/a8csp-project-scaffold-features mu-plugins/${{ github.event.repository.name }}-features
 
       - name: Commit the changed files.
