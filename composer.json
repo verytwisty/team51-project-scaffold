@@ -1,9 +1,9 @@
 {
-  "name": "wpcomsp/project-scaffold",
+  "name": "a8csp/project-scaffold",
   "type": "wordpress-project",
 
-  "description": "The scaffold for new projects used by the WordPress.com Special Projects team.",
-  "homepage": "https://wpcomsp-project-scaffold-production.mystagingwebsite.com",
+  "description": "The scaffold for new projects used by the Automattic Special Projects team.",
+  "homepage": "https://a8csp-project-scaffold-production.mystagingwebsite.com",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
@@ -27,7 +27,7 @@
     }
   ],
   "require": {
-    "php": ">=7.4",
+    "php": ">=8.3",
     "ext-json": "*"
   },
   "require-dev": {
@@ -48,15 +48,15 @@
       "@format:php:theme",
       "@format:php:features"
     ],
-    "format:php:theme": "phpcbf --standard=./themes/wpcomsp-project-scaffold/.phpcs.xml.dist --basepath=. ./themes/wpcomsp-project-scaffold -v",
-    "format:php:features": "phpcbf --standard=./mu-plugins/wpcomsp-project-scaffold-features/.phpcs.xml.dist --basepath=. ./mu-plugins/wpcomsp-project-scaffold-features -v",
+    "format:php:theme": "phpcbf --standard=./themes/a8csp-project-scaffold/.phpcs.xml.dist --basepath=. ./themes/a8csp-project-scaffold -v",
+    "format:php:features": "phpcbf --standard=./mu-plugins/a8csp-project-scaffold-features/.phpcs.xml.dist --basepath=. ./mu-plugins/a8csp-project-scaffold-features -v",
 
     "lint:php": [
       "@lint:php:theme",
       "@lint:php:features"
     ],
-    "lint:php:theme": "phpcs --standard=./themes/wpcomsp-project-scaffold/.phpcs.xml.dist --basepath=. ./themes/wpcomsp-project-scaffold -v",
-    "lint:php:features": "phpcs --standard=./mu-plugins/wpcomsp-project-scaffold-features/.phpcs.xml.dist --basepath=. ./mu-plugins/wpcomsp-project-scaffold-features -v",
+    "lint:php:theme": "phpcs --standard=./themes/a8csp-project-scaffold/.phpcs.xml.dist --basepath=. ./themes/a8csp-project-scaffold -v",
+    "lint:php:features": "phpcs --standard=./mu-plugins/a8csp-project-scaffold-features/.phpcs.xml.dist --basepath=. ./mu-plugins/a8csp-project-scaffold-features -v",
 
     "internationalize": [
       "@makepot:theme",
@@ -66,18 +66,18 @@
       "@updatepo:features"
     ],
 
-    "makepot:theme": "wp i18n make-pot themes/wpcomsp-project-scaffold",
-    "updatepo:theme": "wp i18n update-po themes/wpcomsp-project-scaffold/languages/wpcomsp-project-scaffold.pot",
-    "makemo:theme": "wp i18n make-mo themes/wpcomsp-project-scaffold/languages",
+    "makepot:theme": "wp i18n make-pot themes/a8csp-project-scaffold",
+    "updatepo:theme": "wp i18n update-po themes/a8csp-project-scaffold/languages/a8csp-project-scaffold.pot",
+    "makemo:theme": "wp i18n make-mo themes/a8csp-project-scaffold/languages",
 
-    "makepot:features": "wp i18n make-pot mu-plugins/wpcomsp-project-scaffold-features",
-    "updatepo:features": "wp i18n update-po mu-plugins/wpcomsp-project-scaffold-features/languages/wpcomsp-project-scaffold-features.pot",
-    "makemo:features": "wp i18n make-mo mu-plugins/wpcomsp-project-scaffold-features/languages",
+    "makepot:features": "wp i18n make-pot mu-plugins/a8csp-project-scaffold-features",
+    "updatepo:features": "wp i18n update-po mu-plugins/a8csp-project-scaffold-features/languages/a8csp-project-scaffold-features.pot",
+    "makemo:features": "wp i18n make-mo mu-plugins/a8csp-project-scaffold-features/languages",
 
     "packages-install": "@composer install --ignore-platform-reqs --no-interaction",
     "packages-update": [
       "@composer clear-cache",
-      "@composer update --prefer-stable --no-interaction"
+      "@composer update --prefer-stable --ignore-platform-reqs --no-interaction"
     ]
   },
   "config": {
