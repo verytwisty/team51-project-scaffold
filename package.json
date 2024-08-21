@@ -1,9 +1,9 @@
 {
-  "name": "wpcomsp-project-scaffold",
+  "name": "a8csp-project-scaffold",
   "version": "1.0.0",
-  "description": "The scaffold for new projects used by the WordPress.com Special Projects team.",
+  "description": "The scaffold for new projects used by the Automattic Special Projects team.",
   "author": {
-    "name": "WordPress.com Special Projects Team",
+    "name": "Automattic Special Projects Team",
     "url": "https://wpspecialprojects.com"
   },
   "license": "GPL-2.0-or-later",
@@ -11,7 +11,7 @@
     "wordpress",
     "scaffold"
   ],
-  "homepage": "https://wpcomsp-project-scaffold-production.mystagingwebsite.com",
+  "homepage": "https://a8csp-project-scaffold-production.mystagingwebsite.com",
   "repository": "https://github.com/a8cteam51/team51-project-scaffold",
   "bugs": "https://github.com/a8cteam51/team51-project-scaffold/issues",
   "private": true,

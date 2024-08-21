@@ -25,6 +25,6 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            body: '> [!CAUTION]\n> This PR includes a `block.json` file. If you are adding a new block, please ensure this goes into [the WPCOM Special Projects Monorepo](https://github.com/a8cteam51/special-projects-blocks-monorepo) instead. You will find[ full documentation on the process here](https://github.com/a8cteam51/special-projects-blocks-monorepo/wiki). Please discuss with WPComSP Engineering Leads if you believe  your block should be exempt from the monorepo.'
+            body: '> [!CAUTION]\n> This PR includes a `block.json` file. If you are adding a new block, please ensure this goes into [the A8C Special Projects Monorepo](https://github.com/a8cteam51/special-projects-blocks-monorepo) instead. You will find[ full documentation on the process here](https://github.com/a8cteam51/special-projects-blocks-monorepo/wiki). Please discuss with A8CSP Engineering Leads if you believe your block should be exempt from the monorepo.'
           })
           core.setFailed('This PR included a block.json file and so was rejected.')

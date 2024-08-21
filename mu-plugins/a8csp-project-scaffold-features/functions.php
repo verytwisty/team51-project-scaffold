@@ -5,13 +5,10 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Returns the plugin's slug.
  *
- * @since   0.1.0
- * @version 0.1.0
- *
  * @return  string
  */
-function wpcomsp_features_get_slug(): string {
-	return 'wpcomsp-project-scaffold-features';
+function a8csp_features_get_slug(): string {
+	return 'a8csp-project-scaffold-features';
 }
 
 /**
@@ -19,16 +16,13 @@ function wpcomsp_features_get_slug(): string {
  * as the given asset file whose contents are returns if it exists. If not, it returns an array with the file's last modified
  * time as the version and the main stylesheet + any extra dependencies passed in as the dependencies.
  *
- * @since   0.1.0
- * @version 0.1.0
- *
  * @param   string     $asset_path         The path to the asset file.
  * @param   array|null $extra_dependencies Any extra dependencies to include in the returned meta.
  *
  * @return  array|null
  */
-function wpcomsp_features_get_asset_meta( string $asset_path, ?array $extra_dependencies = null ): ?array {
-	if ( ! file_exists( $asset_path ) || ! str_starts_with( $asset_path, WPCOMSP_FEATURES_DIR ) ) {
+function a8csp_features_get_asset_meta( string $asset_path, ?array $extra_dependencies = null ): ?array {
+	if ( ! file_exists( $asset_path ) || ! str_starts_with( $asset_path, A8CSP_FEATURES_DIR ) ) {
 		return null;
 	}
 
@@ -42,7 +36,7 @@ function wpcomsp_features_get_asset_meta( string $asset_path, ?array $extra_depe
 			'version'      => filemtime( $asset_path ),
 		);
 		if ( false === $asset_meta['version'] ) { // Safeguard against filemtime() returning false.
-			$asset_meta['version'] = WPCOMSP_FEATURES_METADATA['Version'];
+			$asset_meta['version'] = A8CSP_FEATURES_METADATA['Version'];
 		}
 	}
 

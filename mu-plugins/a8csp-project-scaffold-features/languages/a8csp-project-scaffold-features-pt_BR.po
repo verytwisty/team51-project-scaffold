@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPCOMSP Project Scaffold Features 0.1.0\n"
+"Project-Id-Version: A8CSP Project Scaffold Features 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -14,80 +14,80 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 "X-Domain: wpcomsp-project-scaffold-features\n"
 
-#: includes/custom-post-types.php:16
+#: includes/custom-post-types.php:13
 msgctxt "Post Type General Name"
 msgid "Books"
 msgstr "Livros"
 
-#: includes/custom-post-types.php:17
+#: includes/custom-post-types.php:14
 msgid "Book"
 msgstr "Livro"
 
-#: includes/custom-post-types.php:18
+#: includes/custom-post-types.php:15
 msgctxt "Admin Menu text"
 msgid "Books"
 msgstr "Livros"
 
-#: includes/custom-post-types.php:19
+#: includes/custom-post-types.php:16
 msgid "All Books"
 msgstr "Todos os Livros"
 
-#: includes/custom-post-types.php:20
+#: includes/custom-post-types.php:17
 msgid "View Book"
 msgstr "Ver Livro"
 
-#: includes/custom-post-types.php:21
+#: includes/custom-post-types.php:18
 msgid "Add New Book"
 msgstr "Adicionar Novo Livro"
 
-#: includes/custom-post-types.php:22
+#: includes/custom-post-types.php:19
 msgid "Add New"
 msgstr "Adicionar Novo "
 
-#: includes/custom-post-types.php:23
+#: includes/custom-post-types.php:20
 msgid "Edit Book"
 msgstr "Editar Livro"
 
-#: includes/custom-post-types.php:24
+#: includes/custom-post-types.php:21
 msgid "Update Book"
 msgstr "Atualizar Livro"
 
-#: includes/custom-post-types.php:25
+#: includes/custom-post-types.php:22
 msgid "Search Book"
 msgstr "Procurar Livro"
 
-#: includes/custom-post-types.php:26
+#: includes/custom-post-types.php:23
 msgid "Not Found"
 msgstr "Não Encontrado"
 
-#: includes/custom-post-types.php:27
+#: includes/custom-post-types.php:24
 msgid "Not found in Trash"
 msgstr "Não Encontrado na Lixeira"
 
-#: includes/custom-post-types.php:32
+#: includes/custom-post-types.php:29
 msgid "Books"
 msgstr "Livros"
 
-#: includes/custom-post-types.php:33
+#: includes/custom-post-types.php:30
 msgid "Books catalogue"
 msgstr "Catálogo de livros"
 
 #. Description of the plugin
-#: wpcomsp-project-scaffold-features.php
+#: a8csp-project-scaffold-features.php
 msgid "A features plugin for a custom theme. Could include post types, metaboxes etc. Do not use for blocks!"
 msgstr "Um plugin com funcionalidades extras para um tema customizado. Pode incluir post types, metaboxes etc. Não usar para blocos!"
 
 #. Author of the plugin
-#: wpcomsp-project-scaffold-features.php
+#: a8csp-project-scaffold-features.php
 msgid "WordPress.com Special Projects"
 msgstr ""
 
-#. Plugin Name of the plugin
-#: wpcomsp-project-scaffold-features.php
-msgid "WPCOMSP Project Scaffold Features"
+#. Author URI of the plugin
+#: a8csp-project-scaffold-features.php
+msgid "https://wpspecialprojects.com"
 msgstr ""
 
-#. Author URI of the plugin
-#: wpcomsp-project-scaffold-features.php
-msgid "https://wpspecialprojects.com"
+#. Plugin Name of the plugin
+#: a8csp-project-scaffold-features.php
+msgid "A8CSP Project Scaffold Features"
 msgstr ""

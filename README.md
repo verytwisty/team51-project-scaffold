@@ -1,4 +1,4 @@
-# WordPress.com Special Projects -- Project Scaffold
+# Automattic Special Projects -- Project Scaffold
 
 This is a demo project for showcasing standardized build processes of theme and plugin assets. Learn more about it in the [Soft Launch](https://wpspecialprojectsp2.wordpress.com/2023/01/26/front-end-build-processes-task-force-product-soft-launch/) post.
 

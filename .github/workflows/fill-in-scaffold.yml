@@ -29,8 +29,8 @@ jobs:
           git submodule init
           git submodule update
           git mv --force README.scaffold.md README.md
-          git mv themes/build-processes-demo themes/${{ github.event.repository.name }}
-          git mv mu-plugins/build-processes-demo-features mu-plugins/${{ github.event.repository.name }}-features
+          git mv themes/a8csp-project-scaffold themes/${{ github.event.repository.name }}
+          git mv mu-plugins/a8csp-project-scaffold-features mu-plugins/${{ github.event.repository.name }}-features
 
       - name: Commit the changed files.
         run: git commit -am "chore -- rename files from scaffolding"

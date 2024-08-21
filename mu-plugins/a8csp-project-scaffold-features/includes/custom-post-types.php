@@ -5,32 +5,29 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Registers custom post types.
  *
- * @since   0.1.0
- * @version 0.1.0
- *
  * @return  void
  */
-function wpcomsp_features_register_book_post_type(): void {
+function a8csp_features_register_book_post_type(): void {
 	// Set UI labels for Custom Post Type
 	$labels = array(
-		'name'               => _x( 'Books', 'Post Type General Name', 'wpcomsp-project-scaffold-features' ),
-		'singular_name'      => __( 'Book', 'wpcomsp-project-scaffold-features' ),
-		'menu_name'          => _x( 'Books', 'Admin Menu text', 'wpcomsp-project-scaffold-features' ),
-		'all_items'          => __( 'All Books', 'wpcomsp-project-scaffold-features' ),
-		'view_item'          => __( 'View Book', 'wpcomsp-project-scaffold-features' ),
-		'add_new_item'       => __( 'Add New Book', 'wpcomsp-project-scaffold-features' ),
-		'add_new'            => __( 'Add New', 'wpcomsp-project-scaffold-features' ),
-		'edit_item'          => __( 'Edit Book', 'wpcomsp-project-scaffold-features' ),
-		'update_item'        => __( 'Update Book', 'wpcomsp-project-scaffold-features' ),
-		'search_items'       => __( 'Search Book', 'wpcomsp-project-scaffold-features' ),
-		'not_found'          => __( 'Not Found', 'wpcomsp-project-scaffold-features' ),
-		'not_found_in_trash' => __( 'Not found in Trash', 'wpcomsp-project-scaffold-features' ),
+		'name'               => _x( 'Books', 'Post Type General Name', 'a8csp-project-scaffold-features' ),
+		'singular_name'      => __( 'Book', 'a8csp-project-scaffold-features' ),
+		'menu_name'          => _x( 'Books', 'Admin Menu text', 'a8csp-project-scaffold-features' ),
+		'all_items'          => __( 'All Books', 'a8csp-project-scaffold-features' ),
+		'view_item'          => __( 'View Book', 'a8csp-project-scaffold-features' ),
+		'add_new_item'       => __( 'Add New Book', 'a8csp-project-scaffold-features' ),
+		'add_new'            => __( 'Add New', 'a8csp-project-scaffold-features' ),
+		'edit_item'          => __( 'Edit Book', 'a8csp-project-scaffold-features' ),
+		'update_item'        => __( 'Update Book', 'a8csp-project-scaffold-features' ),
+		'search_items'       => __( 'Search Book', 'a8csp-project-scaffold-features' ),
+		'not_found'          => __( 'Not Found', 'a8csp-project-scaffold-features' ),
+		'not_found_in_trash' => __( 'Not found in Trash', 'a8csp-project-scaffold-features' ),
 	);
 
 	// Set other options for Custom Post Type
 	$args = array(
-		'label'               => __( 'Books', 'wpcomsp-project-scaffold-features' ),
-		'description'         => __( 'Books catalogue', 'wpcomsp-project-scaffold-features' ),
+		'label'               => __( 'Books', 'a8csp-project-scaffold-features' ),
+		'description'         => __( 'Books catalogue', 'a8csp-project-scaffold-features' ),
 		'labels'              => $labels,
 		'supports'            => array(
 			'title',
@@ -64,36 +61,33 @@ function wpcomsp_features_register_book_post_type(): void {
 
 	register_post_type( 'book', $args );
 }
-add_action( 'init', 'wpcomsp_features_register_book_post_type' );
+add_action( 'init', 'a8csp_features_register_book_post_type' );
 
 /**
  * Registers and/or enqueues scripts and stylesheets specific to the book post type.
  *
- * @since   0.1.0
- * @version 0.1.0
- *
  * @return  void
  */
-function wpcomsp_features_enqueue_book_post_type_frontend_assets(): void {
-	$plugin_slug = wpcomsp_features_get_slug();
+function a8csp_features_enqueue_book_post_type_frontend_assets(): void {
+	$plugin_slug = a8csp_features_get_slug();
 
 	if ( is_post_type_archive( 'book' ) ) {
-		$asset_meta = wpcomsp_features_get_asset_meta( WPCOMSP_FEATURES_DIR . 'assets/css/build/book-archive.css' );
+		$asset_meta = a8csp_features_get_asset_meta( A8CSP_FEATURES_DIR . 'assets/css/build/book-archive.css' );
 		wp_enqueue_style(
 			"$plugin_slug-book-archive",
-			WPCOMSP_FEATURES_URL . 'assets/css/build/book-archive.css',
+			A8CSP_FEATURES_URL . 'assets/css/build/book-archive.css',
 			$asset_meta['dependencies'],
 			$asset_meta['version']
 		);
 	}
 	if ( is_singular( 'book' ) ) {
-		$asset_meta = wpcomsp_features_get_asset_meta( WPCOMSP_FEATURES_DIR . 'assets/css/build/book-singular.css' );
+		$asset_meta = a8csp_features_get_asset_meta( A8CSP_FEATURES_DIR . 'assets/css/build/book-singular.css' );
 		wp_enqueue_style(
 			"$plugin_slug-book-singular",
-			WPCOMSP_FEATURES_URL . 'assets/css/build/book-singular.css',
+			A8CSP_FEATURES_URL . 'assets/css/build/book-singular.css',
 			$asset_meta['dependencies'],
 			$asset_meta['version']
 		);
 	}
 }
-add_action( 'wp_enqueue_scripts', 'wpcomsp_features_enqueue_book_post_type_frontend_assets' );
+add_action( 'wp_enqueue_scripts', 'a8csp_features_enqueue_book_post_type_frontend_assets' );
