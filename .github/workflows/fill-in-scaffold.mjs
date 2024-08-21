@@ -47,13 +47,13 @@ const buildTemplate = async ( filePath ) => {
 		};
 	} else {
 		replacements = {
-			'Build Processes Demo': repository.custom_properties['human-title'] ?? repository.name,
-			'A demo project for showcasing standardized build processes for various asset types.': repository.description ?? '',
+			'A8CSP Project Scaffold': repository.custom_properties['human-title'] ?? repository.name,
+			'The scaffold for new projects used by the Automattic Special Projects team.': repository.description ?? '',
 			'https://a8csp-project-scaffold-production.mystagingwebsite.com': repository.homepage ?? 'https://wpspecialprojects.com',
-			'build-processes-demo': repository.name,
-			'build_processes_demo': repository.custom_properties['php-globals-long-prefix'],
-			'bpd': repository.custom_properties['php-globals-short-prefix'],
-			'BPD': repository.custom_properties['php-globals-short-prefix'].toUpperCase(),
+			'a8csp-project-scaffold': repository.name,
+			'a8csp_project_scaffold': repository.custom_properties['php-globals-long-prefix'],
+			'a8csp': repository.custom_properties['php-globals-short-prefix'],
+			'A8CSP': repository.custom_properties['php-globals-short-prefix'].toUpperCase(),
 		};
 	}
 
