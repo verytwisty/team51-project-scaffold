@@ -10,16 +10,13 @@ if ( ! class_exists( 'WooCommerce' ) ) {
 /**
  * Registers and/or enqueues WooCommerce-specific scripts and stylesheets.
  *
- * @since   1.0.0
- * @version 1.0.0
- *
  * @return  void
  */
-function wpcomsp_wc_enqueue_frontend_assets(): void {
-	$theme_slug = wpcomsp_get_theme_slug();
+function a8csp_wc_enqueue_frontend_assets(): void {
+	$theme_slug = a8csp_get_theme_slug();
 
 	if ( function_exists( 'is_cart' ) && is_cart() ) {
-		$asset_meta = wpcomsp_get_theme_asset_meta( get_theme_file_path( 'assets/css/build/cart.css' ), array( 'woocommerce-general' ) );
+		$asset_meta = a8csp_get_theme_asset_meta( get_theme_file_path( 'assets/css/build/cart.css' ), array( 'woocommerce-general' ) );
 		wp_enqueue_style(
 			"$theme_slug-cart",
 			get_theme_file_uri( 'assets/css/build/cart.css' ),
@@ -28,7 +25,7 @@ function wpcomsp_wc_enqueue_frontend_assets(): void {
 		);
 	}
 	if ( function_exists( 'is_checkout' ) && is_checkout() ) {
-		$asset_meta = wpcomsp_get_theme_asset_meta( get_theme_file_path( 'assets/css/build/checkout.css' ), array( 'woocommerce-general' ) );
+		$asset_meta = a8csp_get_theme_asset_meta( get_theme_file_path( 'assets/css/build/checkout.css' ), array( 'woocommerce-general' ) );
 		wp_enqueue_style(
 			"$theme_slug-checkout",
 			get_theme_file_uri( 'assets/css/build/checkout.css' ),
@@ -37,4 +34,4 @@ function wpcomsp_wc_enqueue_frontend_assets(): void {
 		);
 	}
 }
-add_action( 'wp_enqueue_scripts', 'wpcomsp_wc_enqueue_frontend_assets' );
+add_action( 'wp_enqueue_scripts', 'a8csp_wc_enqueue_frontend_assets' );

@@ -7,7 +7,7 @@ defined( 'ABSPATH' ) || exit;
  *
  * @return string
  */
-function wpcomsp_sc_translatable_string(): string {
-	return __( 'This string can be translated!', 'wpcomsp-project-scaffold' );
+function a8csp_sc_translatable_string(): string {
+	return __( 'This string can be translated!', 'a8csp-project-scaffold' );
 }
-add_shortcode( 'translate-string', 'wpcomsp_sc_translatable_string' );
+add_shortcode( 'translate-string', 'a8csp_sc_translatable_string' );

@@ -15,7 +15,7 @@
  * Version:                 0.1.0
  * Requires at least:       6.6
  * Requires PHP:            8.3
- * Author:                  WordPress.com Special Projects
+ * Author:                  Automattic Special Projects
  * Author URI:              https://wpspecialprojects.com
  * License:                 GPL-3.0-or-later
  * License URI:             https://www.gnu.org/licenses/gpl-3.0.html

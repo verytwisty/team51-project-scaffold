@@ -1,12 +1,10 @@
 <?php
 /**
- * WPCOMSP Project Scaffold theme functions and definitions.
+ * A8CSP Project Scaffold theme functions and definitions.
  *
  * @link    https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package WPCOMSPProjectScaffold_Theme
- * @since   1.0.0
- * @version 1.0.0
+ * @package A8CSPProjectScaffold_Theme
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -14,12 +12,9 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Returns the theme's slug.
  *
- * @since   1.0.0
- * @version 1.0.0
- *
  * @return  string
  */
-function wpcomsp_get_theme_slug(): string {
+function a8csp_get_theme_slug(): string {
 	return sanitize_key( wp_get_theme()->get( 'Name' ) );
 }
 
@@ -28,15 +23,12 @@ function wpcomsp_get_theme_slug(): string {
  * as the given asset file whose contents are returns if it exists. If not, it returns an array with the file's last modified
  * time as the version and the main stylesheet + any extra dependencies passed in as the dependencies.
  *
- * @since   1.0.0
- * @version 1.0.0
- *
  * @param   string     $asset_path         The path to the asset file.
  * @param   array|null $extra_dependencies Any extra dependencies to include in the returned meta.
  *
  * @return  array|null
  */
-function wpcomsp_get_theme_asset_meta( string $asset_path, ?array $extra_dependencies = null ): ?array {
+function a8csp_get_theme_asset_meta( string $asset_path, ?array $extra_dependencies = null ): ?array {
 	if ( ! file_exists( $asset_path ) || ! str_starts_with( $asset_path, get_stylesheet_directory() ) ) {
 		return null;
 	}
@@ -51,7 +43,7 @@ function wpcomsp_get_theme_asset_meta( string $asset_path, ?array $extra_depende
 			'version'      => filemtime( $asset_path ),
 		);
 		if ( 'css' === $asset_path_info['extension'] && get_theme_file_path( 'style.css' ) !== $asset_path ) {
-			$asset_meta['dependencies'][] = wpcomsp_get_theme_slug() . '-style';
+			$asset_meta['dependencies'][] = a8csp_get_theme_slug() . '-style';
 		}
 		if ( false === $asset_meta['version'] ) { // Safeguard against filemtime() returning false.
 			$asset_meta['version'] = wp_get_theme()->get( 'Version' );
@@ -67,10 +59,10 @@ function wpcomsp_get_theme_asset_meta( string $asset_path, ?array $extra_depende
 }
 
 // Include the rest of the theme's files.
-foreach ( glob( __DIR__ . '/includes/*.php' ) as $wpcomsp_filename ) {
-	if ( preg_match( '#/includes/_#i', $wpcomsp_filename ) ) {
+foreach ( glob( __DIR__ . '/includes/*.php' ) as $a8csp_filename ) {
+	if ( preg_match( '#/includes/_#i', $a8csp_filename ) ) {
 		continue; // Ignore files prefixed with an underscore.
 	}
 
-	include $wpcomsp_filename;
+	include $a8csp_filename;
 }

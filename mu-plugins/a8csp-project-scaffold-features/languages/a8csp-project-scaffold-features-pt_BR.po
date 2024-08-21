@@ -77,11 +77,6 @@ msgstr "Catálogo de livros"
 msgid "A features plugin for a custom theme. Could include post types, metaboxes etc. Do not use for blocks!"
 msgstr "Um plugin com funcionalidades extras para um tema customizado. Pode incluir post types, metaboxes etc. Não usar para blocos!"
 
-#. Author of the plugin
-#: a8csp-project-scaffold-features.php
-msgid "WordPress.com Special Projects"
-msgstr ""
-
 #. Author URI of the plugin
 #: a8csp-project-scaffold-features.php
 msgid "https://wpspecialprojects.com"
@@ -90,4 +85,9 @@ msgstr ""
 #. Plugin Name of the plugin
 #: a8csp-project-scaffold-features.php
 msgid "A8CSP Project Scaffold Features"
+msgstr ""
+
+#. Author of the plugin
+#: a8csp-project-scaffold-features.php
+msgid "Automattic Special Projects"
 msgstr ""

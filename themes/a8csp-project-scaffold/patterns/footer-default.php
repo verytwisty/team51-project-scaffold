@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Default Footer
- * Slug: wpcomsp-project-scaffold/footer-default
+ * Slug: a8csp-project-scaffold/footer-default
  * Categories: footer
  * Block Types: core/template-part/footer
  */
@@ -16,8 +16,8 @@
 		<?php
 		printf(
 			/* Translators: WordPress link. */
-			esc_html__( 'Proudly powered by %s', 'wpcomsp-project-scaffold' ),
-			'<a href="' . esc_url( __( 'https://wordpress.org', 'wpcomsp-project-scaffold' ) ) . '" rel="nofollow">WordPress</a>'
+			esc_html__( 'Proudly powered by %s', 'a8csp-project-scaffold' ),
+			'<a href="' . esc_url( __( 'https://wordpress.org', 'a8csp-project-scaffold' ) ) . '" rel="nofollow">WordPress</a>'
 		)
 		?>
 		</p>

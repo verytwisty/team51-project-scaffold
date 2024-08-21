@@ -1,7 +1,7 @@
 /*
-Theme Name:         WPCOMSP Project Scaffold Theme
+Theme Name:         A8CSP Project Scaffold Theme
 Theme URI:          https://github.com/a8cteam51/team51-project-scaffold
-Author:             WordPress Special Projects
+Author:             Automattic Special Projects
 Author URI:         https://wpspecialprojects.com
 Description:        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et tincidunt metus, eu rutrum sapien.
 Version:            1.0.0
@@ -10,7 +10,7 @@ Requires at least:  6.1
 Requires PHP:       8.1
 License:            GNU General Public License v3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
-Text Domain:        wpcomsp-project-scaffold
+Text Domain:        a8csp-project-scaffold
 Domain Path:        /languages
 Tags:               scaffold
 */
@@ -30,8 +30,7 @@ body {
 .wp-theme-style {
   color: #fff;
   padding: 2px;
-  -webkit-appearance: auto;
-          appearance: auto;
+  appearance: auto;
   direction: rtl;
 }
 @media (min-width: 960px) {

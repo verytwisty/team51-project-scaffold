@@ -14,8 +14,7 @@ body {
 .wp-theme-style {
   color: #fff;
   padding: 2px;
-  -webkit-appearance: auto;
-          appearance: auto;
+  appearance: auto;
   direction: ltr;
 }
 @media (min-width: 960px) {
